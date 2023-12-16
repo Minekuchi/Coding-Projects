@@ -33,17 +33,8 @@ y1 = absorb(x) * y
 
 y1 = np.vectorize(interfere)(x) * y1
 
+y1 = np.abs(y1)
+
 plt.scatter(x,y)
 plt.scatter(x,y1)
 plt.show()
-
-
-
-
-
-
-#plt.scatter(x,y)
-#plt.scatter(x,y1)
-#plt.show()
-#plt.show()
-
